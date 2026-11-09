@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!--
+    / diganti otomatis saat build.
+    Untuk domain sendiri (julvikramsupandi.id) biarkan "/".
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Julvikram Supandi — software engineer di Gorontalo. Membangun aplikasi web &amp; mobile serta layanan digital pemerintahan di Diskominfotik Provinsi Gorontalo, dan meneliti penerapan AI di sektor publik.">
+  <meta name="theme-color" content="#07080F">
+
+  <link rel="canonical" href="https://julvikramsupandi.id/">
+
+  <!-- Pratinjau tautan (WhatsApp, LinkedIn, X, Telegram, dll.) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Julvikram Supandi">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Julvikram Supandi">
+  <meta property="og:description" content="Software Engineer · GovTech · AI — Gorontalo, Indonesia.">
+  <meta property="og:url" content="https://julvikramsupandi.id/">
+  <meta property="og:image" content="https://julvikramsupandi.id/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Julvikram Supandi — Software Engineer · GovTech · AI, Gorontalo, Indonesia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Julvikram Supandi">
+  <meta name="twitter:description" content="Software Engineer · GovTech · AI — Gorontalo, Indonesia.">
+  <meta name="twitter:image" content="https://julvikramsupandi.id/og-image.png">
+
+  <!-- Data terstruktur untuk mesin pencari -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julvikram Supandi",
+    "url": "https://julvikramsupandi.id/",
+    "image": "https://julvikramsupandi.id/og-image.png",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "GovernmentOrganization",
+      "name": "Dinas Komunikasi, Informatika dan Statistik Provinsi Gorontalo"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gorontalo",
+      "addressCountry": "ID"
+    },
+    "knowsAbout": ["Software Engineering", "GovTech", "Artificial Intelligence", "Flutter", "Web Development", "GIS"],
+    "email": "mailto:julvikram.supandi@gmail.com",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Senior Programmer",
+      "credentialCategory": "Sertifikat Kompetensi BNSP",
+      "recognizedBy": { "@type": "Organization", "name": "Badan Nasional Sertifikasi Profesi (BNSP)" },
+      "dateCreated": "2026-02-19"
+    },
+    "sameAs": [
+      "https://github.com/julvikramsupandi",
+      "https://id.linkedin.com/in/julvikramsupandi",
+      "https://www.instagram.com/julvikramsupandi"
+    ]
+  }
+  </script>
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Julvikram">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Julvikram Supandi</title>
+  <noscript><style>#preloader { display: none; }</style></noscript>
+
+  <!-- Latar gelap sejak awal supaya tidak ada kilatan putih saat Flutter dimuat -->
+  <style>
+    html, body { margin: 0; background: #07080F; }
+
+    /* Preloader: digambar di canvas oleh skrip di bawah */
+    #preloader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #07080F;
+      transition: opacity .2s ease;
+    }
+    #preloader canvas { display: block; width: 100%; height: 100%; }
+    #preloader.done { opacity: 0; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <!-- Isi teks untuk perayap / browser tanpa JavaScript.
+       Perbarui bila bio atau proyek pilihan di assets/data/site.json berubah. -->
+  <noscript>
+    <main style="max-width:640px;margin:48px auto;padding:0 16px;color:#EDEFF7;font-family:system-ui,sans-serif;line-height:1.6">
+      <h1>Julvikram Supandi</h1>
+      <p>Software Engineer · GovTech · AI — Gorontalo, Indonesia</p>
+      <p>Merancang dan membangun perangkat lunak selama kurang lebih 12 tahun. Kini mengembangkan layanan digital pemerintahan di Gorontalo, sambil mendalami riset dan pengembangan AI.</p>
+      <h2>Proyek pilihan</h2>
+      <ul>
+        <li><a style="color:#629CEF" href="https://play.google.com/store/apps/details?id=id.go.gorontaloprov.godigi">Godigi</a> — Super Apps layanan publik Gorontalo Digital (2025)</li>
+        <li><a style="color:#629CEF" href="https://skm.gorontaloprov.go.id/">SKM</a> — aplikasi Survei Kepuasan Masyarakat (2024)</li>
+        <li><a style="color:#629CEF" href="https://opendata.gorontaloprov.go.id/">Pentagon</a> — portal Open Data Pemerintah Provinsi Gorontalo (2024)</li>
+        <li><a style="color:#629CEF" href="https://perdosri.org/">PERDOSRI</a> — portal organisasi &amp; sistem keanggotaan dokter spesialis rehabilitasi medik (2021)</li>
+      </ul>
+      <h2>Pengalaman</h2>
+      <ul>
+        <li>Dinas Kominfotik Provinsi Gorontalo — Programmer, 2023–sekarang</li>
+        <li>Badan Pendapatan Daerah Kota Gorontalo — Programmer, 2026–sekarang</li>
+        <li>Freelance — Software Engineer, 2016–sekarang</li>
+        <li>Universitas Negeri Gorontalo — Frontend Developer, 2025</li>
+        <li>BLK Komunitas &amp; Sirojuth Tholibiin Sidomukti — Instruktur TI &amp; Kepala Lab Komputer, 2017–2021</li>
+      </ul>
+      <h2>Pendidikan &amp; sertifikasi</h2>
+      <ul>
+        <li>S2 Teknologi Informasi · Sistem Cerdas — Universitas Negeri Gorontalo, 2026–sekarang</li>
+        <li>Senior Programmer — Sertifikasi BNSP, LSP Teknologi Digital (2026)</li>
+        <li>S1 Sistem Informasi — Universitas Negeri Gorontalo, 2013–2018</li>
+      </ul>
+      <h2>Kontak</h2>
+      <p>
+        <a style="color:#629CEF" href="mailto:julvikram.supandi@gmail.com">julvikram.supandi@gmail.com</a> ·
+        <a style="color:#629CEF" href="https://github.com/julvikramsupandi">GitHub</a> ·
+        <a style="color:#629CEF" href="https://id.linkedin.com/in/julvikramsupandi">LinkedIn</a> ·
+        <a style="color:#629CEF" href="https://www.instagram.com/julvikramsupandi">Instagram</a>
+      </p>
+    </main>
+  </noscript>
+  <div id="preloader" role="status" aria-label="Memuat"><canvas></canvas></div>
+  <script>
+    // Preloader: matahari di tengah layar, dua titik mengorbit (satu untuk
+    // setiap huruf "i" di nama). Setelah Flutter siap, adegan yang sama
+    // dilanjutkan oleh lib/widgets/intro.dart, jadi semua angka di sini HARUS
+    // sama dengan intro.dart, sun.dart, dan warna aksen (#629CEF).
+    (function () {
+      var el = document.getElementById('preloader');
+      var canvas = el.querySelector('canvas');
+      var ctx = canvas.getContext('2d');
+      var t0 = performance.now();
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var CORE = 14, DOT = 4;
+      var ORBITS = [
+        { r: 52, period: 3, phase: -Math.PI / 2 },
+        { r: 84, period: 6, phase: Math.PI * 0.7 },
+      ];
+      var raf = 0, w = 0, h = 0, dpr = 1;
+
+      function elapsed() { return reduced ? 0 : (performance.now() - t0) / 1000; }
+
+      function circle(x, y, r) {
+        ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+      }
+
+      // Sama seperti _SunPainter._glow
+      function glow(x, y, r, a) {
+        var g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(158,197,255,' + a + ')');
+        g.addColorStop(0.35, 'rgba(158,197,255,' + a * 0.35 + ')');
+        g.addColorStop(1, 'rgba(158,197,255,0)');
+        ctx.fillStyle = g;
+        circle(x, y, r);
+      }
+
+      function draw() {
+        var t = elapsed();
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, w, h);
+        var cx = w / 2, cy = h / 2, r = CORE;
+
+        var breathe = 1 + 0.06 * Math.sin(2 * Math.PI * t / 6);
+        glow(cx, cy, r * 9.5 * breathe, 0.10);
+        glow(cx, cy, r * 4.0 * breathe, 0.28);
+        glow(cx, cy, r * 1.9, 0.55);
+        ctx.filter = 'blur(' + r * 0.18 + 'px)';
+        ctx.fillStyle = '#F2F7FF';
+        circle(cx, cy, r);
+
+        ORBITS.forEach(function (o) {
+          ctx.filter = 'none';
+          ctx.lineWidth = 1;
+          ctx.strokeStyle = 'rgba(237,239,247,0.12)';
+          ctx.beginPath(); ctx.arc(cx, cy, o.r, 0, Math.PI * 2); ctx.stroke();
+
+          var a = o.phase + 2 * Math.PI * t / o.period;
+          var x = cx + Math.cos(a) * o.r, y = cy + Math.sin(a) * o.r;
+          ctx.filter = 'blur(' + DOT * 1.4 + 'px)';
+          ctx.fillStyle = 'rgba(98,156,239,0.4)';
+          circle(x, y, DOT * 1.5);
+          ctx.filter = 'none';
+          ctx.fillStyle = '#629CEF';
+          circle(x, y, DOT);
+        });
+
+        if (!reduced) raf = requestAnimationFrame(draw);
+      }
+
+      function resize() {
+        dpr = window.devicePixelRatio || 1;
+        w = innerWidth; h = innerHeight;
+        canvas.width = Math.round(w * dpr);
+        canvas.height = Math.round(h * dpr);
+        if (reduced) draw();
+      }
+
+      window.__preloader = {
+        elapsed: elapsed,
+        hide: function () {
+          if (!el.isConnected || el.classList.contains('done')) return;
+          el.classList.add('done');
+          setTimeout(function () { cancelAnimationFrame(raf); el.remove(); }, 250);
+        },
+      };
+
+      addEventListener('resize', resize);
+      resize();
+      if (!reduced) draw();
+    })();
+  </script>
+  <!-- Statistik pengunjung: Umami Cloud (tanpa cookie). Hanya aktif di domain
+       asli, jadi kunjungan dari localhost tidak ikut terhitung. -->
+  <script defer src="https://cloud.umami.is/script.js"
+          data-website-id="3f63c284-e5c4-4bea-b01d-5960a03fe59a"
+          data-domains="julvikramsupandi.id,www.julvikramsupandi.id"
+          data-do-not-track="true"></script>
+  <!-- Angka publik (jumlah pengunjung di footer): GoatCounter, tanpa cookie.
+       Localhost otomatis tidak dihitung. Perpindahan halaman di dalam Flutter
+       dicatat lewat Analytics.pageview(). -->
+  <script data-goatcounter="https://julvikramsupandi.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
